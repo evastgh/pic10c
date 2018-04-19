@@ -39,7 +39,9 @@ namespace std {
         AccumulateSquares ac(storage);
         doIt1(vec.begin(), vec.end(), nonZeroFunc, ac);
 
-        cout << sqrt(storage) << endl;
+        cout << "Sum of squares = " << sqrt(storage);
+        
+        cout << endl << "========" << endl;
         
         function<bool(double)> isNegativeFunc = isNegative;
         UnitReLu rl;

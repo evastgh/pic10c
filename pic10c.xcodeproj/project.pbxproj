@@ -10,10 +10,7 @@
 		68BCB03B2085C29300A905F8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BCB03A2085C29300A905F8 /* main.cpp */; };
 		68BCB0442085C2C200A905F8 /* myIter.h in Sources */ = {isa = PBXBuildFile; fileRef = 68BCB0422085C2C200A905F8 /* myIter.h */; };
 		68BCB0452085C2C200A905F8 /* doIt.h in Sources */ = {isa = PBXBuildFile; fileRef = 68BCB0432085C2C200A905F8 /* doIt.h */; };
-		68BCB04B2086718600A905F8 /* f.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BCB0492086718600A905F8 /* f.cpp */; };
-		68BCB052208687E000A905F8 /* auto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BCB050208687E000A905F8 /* auto.cpp */; };
-		68BCB055208688D000A905F8 /* parenthesis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BCB053208688D000A905F8 /* parenthesis.cpp */; };
-		68BCB056208688D000A905F8 /* lists.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BCB054208688D000A905F8 /* lists.cpp */; };
+		68BCB04B2086718600A905F8 /* someFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BCB0492086718600A905F8 /* someFunc.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,17 +27,17 @@
 
 /* Begin PBXFileReference section */
 		688FB7972089136D00A053AB /* doItNorm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = doItNorm.h; sourceTree = "<group>"; };
+		688FB79B208929C600A053AB /* Mammal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mammal.h; sourceTree = "<group>"; };
+		688FB7A620895E2A00A053AB /* lists.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lists.h; sourceTree = "<group>"; };
+		688FB7A920895E8100A053AB /* parenthesis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = parenthesis.h; sourceTree = "<group>"; };
 		68BCB0372085C29300A905F8 /* pic10c */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pic10c; sourceTree = BUILT_PRODUCTS_DIR; };
 		68BCB03A2085C29300A905F8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		68BCB0412085C2B200A905F8 /* convertSorted.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = convertSorted.h; sourceTree = "<group>"; };
 		68BCB0422085C2C200A905F8 /* myIter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myIter.h; sourceTree = "<group>"; };
 		68BCB0432085C2C200A905F8 /* doIt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doIt.h; sourceTree = "<group>"; };
-		68BCB0472086713200A905F8 /* f.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = f.h; sourceTree = "<group>"; };
-		68BCB0492086718600A905F8 /* f.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = f.cpp; sourceTree = "<group>"; };
-		68BCB050208687E000A905F8 /* auto.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = auto.cpp; sourceTree = "<group>"; };
+		68BCB0472086713200A905F8 /* someFunc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = someFunc.h; sourceTree = "<group>"; };
+		68BCB0492086718600A905F8 /* someFunc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = someFunc.cpp; sourceTree = "<group>"; };
 		68BCB051208687E000A905F8 /* auto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = auto.h; sourceTree = "<group>"; };
-		68BCB053208688D000A905F8 /* parenthesis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = parenthesis.cpp; sourceTree = "<group>"; };
-		68BCB054208688D000A905F8 /* lists.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lists.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,25 +51,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		688FB7942088F65A00A053AB /* demo-auto-template */ = {
+		688FB7942088F65A00A053AB /* demo-linker-err */ = {
 			isa = PBXGroup;
 			children = (
-				68BCB050208687E000A905F8 /* auto.cpp */,
-				68BCB051208687E000A905F8 /* auto.h */,
-				68BCB0472086713200A905F8 /* f.h */,
-				68BCB0492086718600A905F8 /* f.cpp */,
+				68BCB0472086713200A905F8 /* someFunc.h */,
+				68BCB0492086718600A905F8 /* someFunc.cpp */,
 			);
-			path = "demo-auto-template";
+			path = "demo-linker-err";
 			sourceTree = "<group>";
 		};
 		688FB7952088F90900A053AB /* week2-STLcontainer */ = {
 			isa = PBXGroup;
 			children = (
-				68BCB054208688D000A905F8 /* lists.cpp */,
-				68BCB053208688D000A905F8 /* parenthesis.cpp */,
 				68BCB0412085C2B200A905F8 /* convertSorted.h */,
+				688FB7A920895E8100A053AB /* parenthesis.h */,
+				688FB7A620895E2A00A053AB /* lists.h */,
 			);
 			path = "week2-STLcontainer";
+			sourceTree = "<group>";
+		};
+		688FB799208928B000A053AB /* week4-inheritance */ = {
+			isa = PBXGroup;
+			children = (
+				688FB79B208929C600A053AB /* Mammal.h */,
+			);
+			path = "week4-inheritance";
+			sourceTree = "<group>";
+		};
+		688FB7A320895DDD00A053AB /* future-plans */ = {
+			isa = PBXGroup;
+			children = (
+				68BCB0422085C2C200A905F8 /* myIter.h */,
+			);
+			path = "future-plans";
 			sourceTree = "<group>";
 		};
 		68BCB02E2085C29300A905F8 = {
@@ -94,9 +105,11 @@
 		68BCB0392085C29300A905F8 /* pic10c */ = {
 			isa = PBXGroup;
 			children = (
+				68BCB03A2085C29300A905F8 /* main.cpp */,
 				688FB7952088F90900A053AB /* week2-STLcontainer */,
 				68BCB04D2086852300A905F8 /* week3-reduce */,
-				68BCB03A2085C29300A905F8 /* main.cpp */,
+				688FB799208928B000A053AB /* week4-inheritance */,
+				688FB7A320895DDD00A053AB /* future-plans */,
 			);
 			path = pic10c;
 			sourceTree = "<group>";
@@ -104,10 +117,10 @@
 		68BCB04D2086852300A905F8 /* week3-reduce */ = {
 			isa = PBXGroup;
 			children = (
-				688FB7942088F65A00A053AB /* demo-auto-template */,
+				68BCB051208687E000A905F8 /* auto.h */,
+				688FB7942088F65A00A053AB /* demo-linker-err */,
 				68BCB0432085C2C200A905F8 /* doIt.h */,
 				688FB7972089136D00A053AB /* doItNorm.h */,
-				68BCB0422085C2C200A905F8 /* myIter.h */,
 			);
 			path = "week3-reduce";
 			sourceTree = "<group>";
@@ -168,11 +181,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68BCB055208688D000A905F8 /* parenthesis.cpp in Sources */,
-				68BCB056208688D000A905F8 /* lists.cpp in Sources */,
-				68BCB04B2086718600A905F8 /* f.cpp in Sources */,
+				68BCB04B2086718600A905F8 /* someFunc.cpp in Sources */,
 				68BCB03B2085C29300A905F8 /* main.cpp in Sources */,
-				68BCB052208687E000A905F8 /* auto.cpp in Sources */,
 				68BCB0442085C2C200A905F8 /* myIter.h in Sources */,
 				68BCB0452085C2C200A905F8 /* doIt.h in Sources */,
 			);
