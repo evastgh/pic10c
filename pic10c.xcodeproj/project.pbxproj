@@ -64,6 +64,16 @@
 			path = "demo-auto-template";
 			sourceTree = "<group>";
 		};
+		688FB7952088F90900A053AB /* week2-STLcontainer */ = {
+			isa = PBXGroup;
+			children = (
+				68BCB054208688D000A905F8 /* lists.cpp */,
+				68BCB053208688D000A905F8 /* parenthesis.cpp */,
+				68BCB0412085C2B200A905F8 /* convertSorted.h */,
+			);
+			path = "week2-STLcontainer";
+			sourceTree = "<group>";
+		};
 		68BCB02E2085C29300A905F8 = {
 			isa = PBXGroup;
 			children = (
@@ -84,20 +94,10 @@
 			isa = PBXGroup;
 			children = (
 				68BCB04D2086852300A905F8 /* week3-reduce */,
-				68BCB04C208684F800A905F8 /* week2-STL-containers */,
 				68BCB03A2085C29300A905F8 /* main.cpp */,
+				688FB7952088F90900A053AB /* week2-STLcontainer */,
 			);
 			path = pic10c;
-			sourceTree = "<group>";
-		};
-		68BCB04C208684F800A905F8 /* week2-STL-containers */ = {
-			isa = PBXGroup;
-			children = (
-				68BCB054208688D000A905F8 /* lists.cpp */,
-				68BCB053208688D000A905F8 /* parenthesis.cpp */,
-				68BCB0412085C2B200A905F8 /* convertSorted.h */,
-			);
-			name = "week2-STL-containers";
 			sourceTree = "<group>";
 		};
 		68BCB04D2086852300A905F8 /* week3-reduce */ = {
