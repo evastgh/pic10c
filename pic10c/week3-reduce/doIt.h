@@ -6,13 +6,12 @@
 
 namespace std {
     
-    class Predicate {
-    public:
-        int p;
-        Predicate(int p) : p(p) {}
-        bool operator() (int n) { return n % p == 0; }
-    };
-
+class Predicate {
+public:
+    int p;
+    Predicate(int p) : p(p) {}
+    bool operator() (int n) { return n % p == 0; }
+};
 
 ///* std::functions */
 // void doIt(vector<int>::iterator b1, vector<int>::iterator e1, function<bool(int)>& p, function<void(int)>& f)
@@ -60,8 +59,7 @@ int doItTestMain () {
     }
     
     cout << endl << "========" << endl;
-//
-////    doIt(vec.begin(), vec.end(), &isEven, &printInt);
+//    doIt(vec.begin(), vec.end(), &isEven, &printInt);
 //
 //    cout << endl << "========" << endl;
 //
@@ -81,9 +79,6 @@ int doItTestMain () {
     for (; it != vec.end(); ++it) {
             printInt(*it);
     }
-    
-    
-
     return 0;
 }
 }

@@ -11,6 +11,9 @@
 		68BCB0442085C2C200A905F8 /* myIter.h in Sources */ = {isa = PBXBuildFile; fileRef = 68BCB0422085C2C200A905F8 /* myIter.h */; };
 		68BCB0452085C2C200A905F8 /* doIt.h in Sources */ = {isa = PBXBuildFile; fileRef = 68BCB0432085C2C200A905F8 /* doIt.h */; };
 		68BCB04B2086718600A905F8 /* f.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BCB0492086718600A905F8 /* f.cpp */; };
+		68BCB052208687E000A905F8 /* auto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BCB050208687E000A905F8 /* auto.cpp */; };
+		68BCB055208688D000A905F8 /* parenthesis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BCB053208688D000A905F8 /* parenthesis.cpp */; };
+		68BCB056208688D000A905F8 /* lists.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BCB054208688D000A905F8 /* lists.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +36,10 @@
 		68BCB0432085C2C200A905F8 /* doIt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doIt.h; sourceTree = "<group>"; };
 		68BCB0472086713200A905F8 /* f.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = f.h; sourceTree = "<group>"; };
 		68BCB0492086718600A905F8 /* f.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = f.cpp; sourceTree = "<group>"; };
+		68BCB050208687E000A905F8 /* auto.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = auto.cpp; sourceTree = "<group>"; };
+		68BCB051208687E000A905F8 /* auto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = auto.h; sourceTree = "<group>"; };
+		68BCB053208688D000A905F8 /* parenthesis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = parenthesis.cpp; sourceTree = "<group>"; };
+		68BCB054208688D000A905F8 /* lists.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lists.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +53,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		688FB7942088F65A00A053AB /* demo-auto-template */ = {
+			isa = PBXGroup;
+			children = (
+				68BCB050208687E000A905F8 /* auto.cpp */,
+				68BCB051208687E000A905F8 /* auto.h */,
+				68BCB0472086713200A905F8 /* f.h */,
+				68BCB0492086718600A905F8 /* f.cpp */,
+			);
+			path = "demo-auto-template";
+			sourceTree = "<group>";
+		};
 		68BCB02E2085C29300A905F8 = {
 			isa = PBXGroup;
 			children = (
@@ -65,14 +83,31 @@
 		68BCB0392085C29300A905F8 /* pic10c */ = {
 			isa = PBXGroup;
 			children = (
-				68BCB0412085C2B200A905F8 /* convertSorted.h */,
-				68BCB0432085C2C200A905F8 /* doIt.h */,
-				68BCB0422085C2C200A905F8 /* myIter.h */,
-				68BCB0472086713200A905F8 /* f.h */,
-				68BCB0492086718600A905F8 /* f.cpp */,
+				68BCB04D2086852300A905F8 /* week3-reduce */,
+				68BCB04C208684F800A905F8 /* week2-STL-containers */,
 				68BCB03A2085C29300A905F8 /* main.cpp */,
 			);
 			path = pic10c;
+			sourceTree = "<group>";
+		};
+		68BCB04C208684F800A905F8 /* week2-STL-containers */ = {
+			isa = PBXGroup;
+			children = (
+				68BCB054208688D000A905F8 /* lists.cpp */,
+				68BCB053208688D000A905F8 /* parenthesis.cpp */,
+				68BCB0412085C2B200A905F8 /* convertSorted.h */,
+			);
+			name = "week2-STL-containers";
+			sourceTree = "<group>";
+		};
+		68BCB04D2086852300A905F8 /* week3-reduce */ = {
+			isa = PBXGroup;
+			children = (
+				688FB7942088F65A00A053AB /* demo-auto-template */,
+				68BCB0432085C2C200A905F8 /* doIt.h */,
+				68BCB0422085C2C200A905F8 /* myIter.h */,
+			);
+			path = "week3-reduce";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,8 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68BCB055208688D000A905F8 /* parenthesis.cpp in Sources */,
+				68BCB056208688D000A905F8 /* lists.cpp in Sources */,
 				68BCB04B2086718600A905F8 /* f.cpp in Sources */,
 				68BCB03B2085C29300A905F8 /* main.cpp in Sources */,
+				68BCB052208687E000A905F8 /* auto.cpp in Sources */,
 				68BCB0442085C2C200A905F8 /* myIter.h in Sources */,
 				68BCB0452085C2C200A905F8 /* doIt.h in Sources */,
 			);

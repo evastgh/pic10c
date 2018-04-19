@@ -13,7 +13,7 @@ vector<pair<int, int> > convertSorted(const TContainer& set)
     cout << "[" << *iter << ", ";
 
     for (++iter; iter != set.cend(); ++iter) {
-        assert(*iter >= current_range.second); //, "convertSorted only works with sorted data. ");
+        assert(*iter >= current_range.second);
         if (*iter == current_range.second) {
             current_range.second = *iter + 1;
         }
@@ -28,5 +28,32 @@ vector<pair<int, int> > convertSorted(const TContainer& set)
     return_value.push_back(current_range);
 
     return return_value;
+}
+
+int convertTest () {
+    cout << "Please input number of integers: ";
+    size_t size;
+    cin >> size;
+    
+    vector<int> some_set;
+    cout << "Please input the integers, separated by space. " << endl;
+    for (size_t i = 0; i < size; ++i) {
+        int entry;
+        cin >> entry;
+        some_set.push_back(entry);
+    }
+    sort(some_set.begin(), some_set.end());
+    
+    cout << "To verify, the input is ";
+    for (auto it = some_set.cbegin(); it != some_set.cend(); ++it)
+        cout << *it << ' ';
+    cout << endl;
+    
+    vector<pair<int, int> > ranges = convertSorted(some_set);
+    // cout << "The converted ranges is: ";
+    // for (auto it = ranges.cbegin(); it != ranges.cend(); ++it)
+    //     cout << "[" << it->first << ", " << it->second << ") " << endl;
+    
+    return 0;
 }
 }
