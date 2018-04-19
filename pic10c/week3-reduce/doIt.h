@@ -5,13 +5,6 @@
 #include <algorithm>
 
 namespace std {
-    
-class Predicate {
-public:
-    int p;
-    Predicate(int p) : p(p) {}
-    bool operator() (int n) { return n % p == 0; }
-};
 
 ///* std::functions */
 // void doIt(vector<int>::iterator b1, vector<int>::iterator e1, function<bool(int)>& p, function<void(int)>& f)
@@ -21,13 +14,13 @@ public:
 //             f(*b1);
 // }
 //
-///* c-style function pointers */
-//void doIt(vector<int>::iterator b1, vector<int>::iterator e1, bool(*p)(int), void(*f)(int))
-//{
-//    for (; b1 != e1; ++b1)
-//        if (p(*b1))
-//            f(*b1);
-//}
+/* c-style function pointers */
+void doIt(vector<int>::iterator b1, vector<int>::iterator e1, bool(*p)(int), void(*f)(int))
+{
+    for (; b1 != e1; ++b1)
+        if (p(*b1))
+            f(*b1);
+}
 //
 ///* predicate */
 //void doIt(vector<int>::iterator b1, vector<int>::iterator e1, Predicate& p, void(*f)(int))
@@ -36,6 +29,13 @@ public:
 //            if (p(*b1))
 //                f(*b1);
 //    }
+    
+    class Predicate {
+    public:
+        int p;
+        Predicate(int p) : p(p) {}
+        bool operator() (int n) { return n % p == 0; }
+    };
 
 /* templates */
 template <class TFunc1, class TFunc2>
@@ -59,7 +59,7 @@ int doItTestMain () {
     }
     
     cout << endl << "========" << endl;
-//    doIt(vec.begin(), vec.end(), &isEven, &printInt);
+    doIt(vec.begin(), vec.end(), &isEven, &printInt);
 //
 //    cout << endl << "========" << endl;
 //

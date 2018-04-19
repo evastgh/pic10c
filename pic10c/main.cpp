@@ -1,6 +1,5 @@
-#include "doIt.h"
-#include "myIter.h"
-#include "f.h"
+#include "doItNorm.h"
+//#include "myIter.h"
 
 using namespace std;
 
@@ -12,5 +11,5 @@ int main(int argc, const char * argv[]) {
 //    f(msg);
 //    f(20u);
     
-    doItTestMain();
+    doItNormTest();
 }

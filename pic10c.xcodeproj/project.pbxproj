@@ -29,6 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		688FB7972089136D00A053AB /* doItNorm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = doItNorm.h; sourceTree = "<group>"; };
 		68BCB0372085C29300A905F8 /* pic10c */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pic10c; sourceTree = BUILT_PRODUCTS_DIR; };
 		68BCB03A2085C29300A905F8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		68BCB0412085C2B200A905F8 /* convertSorted.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = convertSorted.h; sourceTree = "<group>"; };
@@ -93,9 +94,9 @@
 		68BCB0392085C29300A905F8 /* pic10c */ = {
 			isa = PBXGroup;
 			children = (
+				688FB7952088F90900A053AB /* week2-STLcontainer */,
 				68BCB04D2086852300A905F8 /* week3-reduce */,
 				68BCB03A2085C29300A905F8 /* main.cpp */,
-				688FB7952088F90900A053AB /* week2-STLcontainer */,
 			);
 			path = pic10c;
 			sourceTree = "<group>";
@@ -105,6 +106,7 @@
 			children = (
 				688FB7942088F65A00A053AB /* demo-auto-template */,
 				68BCB0432085C2C200A905F8 /* doIt.h */,
+				688FB7972089136D00A053AB /* doItNorm.h */,
 				68BCB0422085C2C200A905F8 /* myIter.h */,
 			);
 			path = "week3-reduce";
