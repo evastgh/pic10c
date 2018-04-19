@@ -7,14 +7,14 @@
 
 namespace std {
     
-/* templates */
-template <class T1, class T2>
-void doIt1(vector<double>::iterator b1, vector<double>::iterator e1, T1& p, T2& f)
-{
-    for (; b1 != e1; ++b1)
-        if (p(*b1))
-            f(*b1);
-}
+    /* templates */
+    template <class T1, class T2>
+    void doIt1(vector<double>::iterator b1, vector<double>::iterator e1, T1& p, T2& f)
+    {
+        for (; b1 != e1; ++b1)
+            if (p(*b1))
+                f(*b1);
+    }
 
     bool nonZero(double in) { return in != 0.0; }
     class AccumulateSquares {
