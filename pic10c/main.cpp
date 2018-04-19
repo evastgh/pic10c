@@ -1,14 +1,14 @@
-// week2
-#include "convertSorted.h"
-#include "parenthesis.h"
-#include "list.h"
+///* week2 */
+//#include "convertSorted.h"
+//#include "parenthesis.h"
+//#include "list.h"
+//
+///* week3 */
+//#include "auto.h"
+//#include "doIt.h"
+//#include "doItNorm.h"
 
-// wee3
-#include "auto.h"
-#include "doIt.h"
-#include "doItNorm.h"
-
-// future
+///* future plans */
 //#include "myIter.h"
 
 using namespace std;
