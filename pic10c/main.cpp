@@ -8,6 +8,10 @@
 //#include "doIt.h"
 //#include "doItNorm.h"
 
+/* week4 */
+#include "GenericVector.h"
+#include "partial.h"
+
 ///* future plans */
 //#include "myIter.h"
 
@@ -25,4 +29,7 @@ int main(int argc, const char * argv[]) {
 //    doItNormTest();
     
     /* week4 */
+    genericVectorTest();
+    cout << endl << "========" << endl;
+    genericArrayTest();
 }
