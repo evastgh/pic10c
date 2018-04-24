@@ -30,6 +30,7 @@
 		688FB79B208929C600A053AB /* GenericVector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericVector.h; sourceTree = "<group>"; };
 		688FB7A620895E2A00A053AB /* lists.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lists.h; sourceTree = "<group>"; };
 		688FB7A920895E8100A053AB /* parenthesis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = parenthesis.h; sourceTree = "<group>"; };
+		68A99F3C208EC1640043F6B7 /* partialFunc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = partialFunc.h; sourceTree = "<group>"; };
 		68BCB0372085C29300A905F8 /* pic10c */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pic10c; sourceTree = BUILT_PRODUCTS_DIR; };
 		68BCB03A2085C29300A905F8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		68BCB0412085C2B200A905F8 /* convertSorted.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = convertSorted.h; sourceTree = "<group>"; };
@@ -38,7 +39,7 @@
 		68BCB0472086713200A905F8 /* someFunc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = someFunc.h; sourceTree = "<group>"; };
 		68BCB0492086718600A905F8 /* someFunc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = someFunc.cpp; sourceTree = "<group>"; };
 		68BCB051208687E000A905F8 /* auto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = auto.h; sourceTree = "<group>"; };
-		68DE32AF208A869D008C95C5 /* partial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = partial.h; sourceTree = "<group>"; };
+		68DE32AF208A869D008C95C5 /* partialClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = partialClass.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				688FB79B208929C600A053AB /* GenericVector.h */,
-				68DE32AF208A869D008C95C5 /* partial.h */,
+				68A99F3C208EC1640043F6B7 /* partialFunc.h */,
+				68DE32AF208A869D008C95C5 /* partialClass.h */,
 			);
 			path = "week4-inheritance";
 			sourceTree = "<group>";

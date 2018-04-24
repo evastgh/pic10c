@@ -1,3 +1,6 @@
+#ifndef PARTIAL_CLASS
+#define PARTIAL_CLASS
+
 #include <array>
 #include <vector>
 #include <iostream>
@@ -85,3 +88,4 @@ namespace std {
             cout << (*it)->name << endl;
     }
 }
+#endif

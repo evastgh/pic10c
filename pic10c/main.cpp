@@ -10,7 +10,7 @@
 
 /* week4 */
 #include "GenericVector.h"
-#include "partial.h"
+#include "partialClass.h"
 
 ///* future plans */
 //#include "myIter.h"

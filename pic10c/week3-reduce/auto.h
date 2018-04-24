@@ -1,3 +1,6 @@
+#ifndef AUTO
+#define AUTO
+
 #include <vector>
 #include <iostream>
 
@@ -21,3 +24,5 @@ namespace std {
     }
 
 }
+
+#endif

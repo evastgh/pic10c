@@ -1,4 +1,7 @@
-#include <iostream> 
+#ifndef DO_IT
+#define DO_IT
+
+#include <iostream>
 #include <utility>
 #include <vector>
 #include <set>
@@ -85,3 +88,4 @@ namespace std {
         cout << endl << "========" << endl;
     }
 }
+#endif 

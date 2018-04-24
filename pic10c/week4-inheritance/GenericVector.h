@@ -1,3 +1,6 @@
+#ifndef GENERIC_VECTOR
+#define GENERIC_VECTOR
+
 #include <vector>
 #include <iostream>
 #include <string>
@@ -31,3 +34,5 @@ namespace std {
             cout << (*it)->name << endl;
     }
 }
+
+#endif

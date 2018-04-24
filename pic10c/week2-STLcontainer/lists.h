@@ -1,3 +1,6 @@
+#ifndef LISTS
+#define LISTS
+
 #include <iostream>
 #include <cassert>
 #include <utility>
@@ -68,3 +71,5 @@ namespace std {
         cout << endl;
     }
 }
+
+#endif

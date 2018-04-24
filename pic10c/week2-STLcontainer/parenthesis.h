@@ -1,3 +1,6 @@
+#ifndef PARENTHESIS
+#define PARENTHESIS
+
 #include <iostream>
 #include <cassert>
 #include <utility>
@@ -43,3 +46,5 @@ namespace std {
             cout << "Naaaahhhhh" << endl;
     }
 }
+
+#endif

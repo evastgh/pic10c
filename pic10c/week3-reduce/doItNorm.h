@@ -1,3 +1,6 @@
+#ifndef DO_IT_NORM
+#define DO_IT_NORM
+
 #include <iostream>
 #include <utility>
 #include <vector>
@@ -54,3 +57,4 @@ namespace std {
     }
 
 }
+#endif

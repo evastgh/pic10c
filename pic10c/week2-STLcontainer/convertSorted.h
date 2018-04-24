@@ -1,7 +1,9 @@
+#ifndef CONVERT_SORTED
+#define CONVERT_SORTED
 #include <vector>
 #include <utility>
 #include <cassert>
-#include <iostream> 
+#include <iostream>
 
 namespace std {
     template <class TContainer>
@@ -55,3 +57,4 @@ namespace std {
         //     cout << "[" << it->first << ", " << it->second << ") " << endl;
     }
 }
+#endif
