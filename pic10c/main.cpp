@@ -11,6 +11,7 @@
 /* week4 */
 #include "GenericVector.h"
 #include "partialClass.h"
+//#include "partialFunc.h"
 
 ///* future plans */
 //#include "myIter.h"
@@ -29,7 +30,8 @@ int main(int argc, const char * argv[]) {
 //    doItNormTest();
     
     /* week4 */
-    genericVectorTest();
-    cout << endl << "========" << endl;
+//    genericVectorTest();
+//    cout << endl << "========" << endl;
     genericArrayTest();
+//    partialFuncTest();
 }
