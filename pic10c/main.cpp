@@ -9,12 +9,12 @@
 //#include "doItNorm.h"
 
 /* week4 */
-#include "GenericVector.h"
-#include "partialClass.h"
+//#include "GenericVector.h"
+//#include "partialClass.h"
 //#include "partialFunc.h"
 
-///* future plans */
-//#include "myIter.h"
+/* week5 */
+#include "myIter.h"
 
 using namespace std;
 
@@ -32,6 +32,9 @@ int main(int argc, const char * argv[]) {
     /* week4 */
 //    genericVectorTest();
 //    cout << endl << "========" << endl;
-    genericArrayTest();
+//    genericArrayTest();
 //    partialFuncTest();
+    
+    /* week5 */
+    myIterTestMain();
 }
