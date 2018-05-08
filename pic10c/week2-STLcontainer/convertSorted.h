@@ -6,6 +6,9 @@
 #include <iostream>
 
 namespace std {
+    /* You might want to read https://stackoverflow.com/questions/4986673/c11-rvalues-and-move-semantics-confusion-return-statement/4986802#4986802
+    to get some sense of returning a vector<pair<int, int>> in my function :)
+    */
     template <class TContainer>
     vector<pair<int, int> > convertSorted(const TContainer& set)
     {
