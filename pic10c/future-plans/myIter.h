@@ -79,7 +79,7 @@ int myIterTestMain () {
     vector<pair<int, int> > ranges = convertSorted(some_set);
 
     DisjointRangesWrapper dr(std::move(ranges));
-    for (auto it = dr.begin(); it != dr.end(); ++it)
+    for (DisjointRangesWrapper::Iterator it = dr.begin(); it != dr.end(); ++it)
         cout << *it << ' ';
     // cout << "The converted ranges is: ";
     // for (auto it = ranges.cbegin(); it != ranges.cend(); ++it)
