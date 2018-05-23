@@ -13,8 +13,9 @@
 //#include "partialClass.h"
 //#include "partialFunc.h"
 
-/* week5 */
+/* week8 */
 #include "myIter.h"
+#include "generic.h"
 
 using namespace std;
 
@@ -35,6 +36,7 @@ int main(int argc, const char * argv[]) {
 //    genericArrayTest();
 //    partialFuncTest();
     
-    /* week5 */
-    myIterTestMain();
+    /* week8 */
+//    myIterTestMain();
+    setIterTest();
 }

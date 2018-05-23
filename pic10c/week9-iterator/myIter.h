@@ -3,6 +3,7 @@
 #include <vector>
 #include <set>
 #include <algorithm>
+#include <iterator>
 #include "convertSorted.h"
 
 namespace std {
@@ -77,13 +78,24 @@ int myIterTestMain () {
     cout << endl;
 
     vector<pair<int, int> > ranges = convertSorted(some_set);
-
-    DisjointRangesWrapper dr(std::move(ranges));
-    for (DisjointRangesWrapper::Iterator it = dr.begin(); it != dr.end(); ++it)
-        cout << *it << ' ';
     // cout << "The converted ranges is: ";
     // for (auto it = ranges.cbegin(); it != ranges.cend(); ++it)
     //     cout << "[" << it->first << ", " << it->second << ") " << endl;
+
+    DisjointRangesWrapper dr(std::move(ranges));
+    cout << "The following is from iterating through DisjointRangesWrapper: ";
+    for (DisjointRangesWrapper::Iterator it = dr.begin(); it != dr.end(); ++it)
+        cout << *it << ' ';
+    cout << endl;
+    
+    vector<int> copy_result = {100, 101, 102, 103, 104};
+    copy(dr.begin(), dr.end(), inserter(copy_result, next(copy_result.begin())));
+    
+    cout << "The following is the copied result: ";
+    for(int copied : copy_result)
+        cout << copied << ' ';
+    cout << endl;
+        
 
     return 0;
 }

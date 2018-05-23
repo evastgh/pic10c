@@ -26,6 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		685BB68F20B3EF23000D8561 /* generic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = generic.h; sourceTree = "<group>"; };
 		688FB7972089136D00A053AB /* doItNorm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = doItNorm.h; sourceTree = "<group>"; };
 		688FB79B208929C600A053AB /* GenericVector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericVector.h; sourceTree = "<group>"; };
 		688FB7A620895E2A00A053AB /* lists.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lists.h; sourceTree = "<group>"; };
@@ -82,12 +83,13 @@
 			path = "week4-inheritance";
 			sourceTree = "<group>";
 		};
-		688FB7A320895DDD00A053AB /* future-plans */ = {
+		688FB7A320895DDD00A053AB /* week9-iterator */ = {
 			isa = PBXGroup;
 			children = (
 				68BCB0422085C2C200A905F8 /* myIter.h */,
+				685BB68F20B3EF23000D8561 /* generic.h */,
 			);
-			path = "future-plans";
+			path = "week9-iterator";
 			sourceTree = "<group>";
 		};
 		68BCB02E2085C29300A905F8 = {
@@ -113,7 +115,7 @@
 				688FB7952088F90900A053AB /* week2-STLcontainer */,
 				68BCB04D2086852300A905F8 /* week3-reduce */,
 				688FB799208928B000A053AB /* week4-inheritance */,
-				688FB7A320895DDD00A053AB /* future-plans */,
+				688FB7A320895DDD00A053AB /* week9-iterator */,
 			);
 			path = pic10c;
 			sourceTree = "<group>";
