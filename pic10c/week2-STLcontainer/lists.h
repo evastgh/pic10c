@@ -41,7 +41,8 @@ namespace std {
         }
     }
 
-    void readList(list<int>& list)
+    template <class T>
+    void readList(list<T>& list)
     {
         cout << "Please input number of integers: ";
         size_t size;
@@ -49,7 +50,7 @@ namespace std {
         
         cout << "Please input the integers, separated by space. " << endl;
         for (size_t i = 0; i < size; ++i) {
-            int entry;
+            T entry;
             cin >> entry;
             list.push_back(entry);
         }

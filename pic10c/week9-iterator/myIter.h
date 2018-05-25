@@ -78,24 +78,20 @@ int myIterTestMain () {
     cout << endl;
 
     vector<pair<int, int> > ranges = convertSorted(some_set);
-    // cout << "The converted ranges is: ";
-    // for (auto it = ranges.cbegin(); it != ranges.cend(); ++it)
-    //     cout << "[" << it->first << ", " << it->second << ") " << endl;
 
     DisjointRangesWrapper dr(std::move(ranges));
     cout << "The following is from iterating through DisjointRangesWrapper: ";
-    for (DisjointRangesWrapper::Iterator it = dr.begin(); it != dr.end(); ++it)
-        cout << *it << ' ';
-    cout << endl;
     
+    copy(dr.begin(), dr.end(), ostream_iterator<int>(cout, " "));
+    cout << endl;
+    auto isEven = [](int input) { return input%2 == 0; };
+    copy_if(dr.begin(), dr.end(), ostream_iterator<int>(cout, " "), isEven);
+    cout << endl;
+
     vector<int> copy_result = {100, 101, 102, 103, 104};
-    copy(dr.begin(), dr.end(), inserter(copy_result, next(copy_result.begin())));
-    
-    cout << "The following is the copied result: ";
-    for(int copied : copy_result)
-        cout << copied << ' ';
-    cout << endl;
-        
+    copy(dr.begin(), dr.end(), copy_result.end()); // real bad practice!!!!
+    cout << "After insertion";
+    copy(copy_result.begin(), copy_result.end()+4, ostream_iterator<int>(cout, " ")); // real bad practice!!!!
 
     return 0;
 }

@@ -15,7 +15,10 @@
 
 /* week8 */
 #include "myIter.h"
-#include "generic.h"
+//#include "setIterTest.h"
+#include "testSort.h"
+#include "testInnerProd.h"
+#include "lam.h"
 
 using namespace std;
 
@@ -38,5 +41,8 @@ int main(int argc, const char * argv[]) {
     
     /* week8 */
 //    myIterTestMain();
-    setIterTest();
+//    setIterTest();
+    testSort();
+//    testInnerProd();
+//    testLam();
 }

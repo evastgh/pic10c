@@ -60,9 +60,4 @@ namespace std {
             // Seems fine... but valgrind says...
         }
     }
-
-    void anyAlgorithmTest() {
-        
-    }
-
 }
