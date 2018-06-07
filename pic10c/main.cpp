@@ -13,12 +13,18 @@
 //#include "partialClass.h"
 //#include "partialFunc.h"
 
-/* week8 */
-#include "myIter.h"
+/* week8? 9? */
+//#include "myIter.h"
 //#include "setIterTest.h"
-#include "testSort.h"
-#include "testInnerProd.h"
-#include "lam.h"
+//#include "testSort.h"
+//#include "testInnerProd.h"
+//#include "lam.h"
+//#include "testEqual.h"
+//#include "findEndTest.h"
+
+/* week10 */
+#include "moveTest.h"
+#include "moveDemo.h"
 
 using namespace std;
 
@@ -42,7 +48,13 @@ int main(int argc, const char * argv[]) {
     /* week8 */
 //    myIterTestMain();
 //    setIterTest();
-    testSort();
+//    testSort();
 //    testInnerProd();
 //    testLam();
+//    testEqual();
+//    findEndTest();
+    
+    /* week10 */
+//    moveTest();
+    moveDemo();
 }

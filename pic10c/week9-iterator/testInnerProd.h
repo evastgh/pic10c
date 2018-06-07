@@ -9,6 +9,7 @@ namespace std {
         readList(l1);
         readList(l2);
         
-        cout << "The inner product of the two lists is " << inner_product(l1.begin(), l1.end(), l2.begin(), 0.0);
+        cout << "The inner product of the two lists is " << inner_product(l1.begin(), l1.end(), l2.begin(), 0.0) << endl;
+        cout << "The accumulated value ot the first list is " << accumulate(l1.begin(), l1.end(), 0.0);
     }
 }
