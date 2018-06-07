@@ -28,7 +28,7 @@ namespace std {
         MyClass(const string& name, vector<T>&& array) : Base(name), data(move(array)) {
             cout << "Move constructor called. " << endl;
         }
-//        MyClass(MyClass&& other) = delete;
+//        MyClass(MyClass&& other) = delete; // for conditions for automatically generated copy/move constructors, read https://stackoverflow.com/questions/4943958/conditions-for-automatic-generation-of-default-copy-move-ctor-and-copy-move-assi
 //        MyClass(const string& name, const vector<T>& array) = delete;
 //        MyClass(const string& name, const vector<T>& array) : Base(name), data(array) {
 //            cout << "Copy constructor called. " << endl;

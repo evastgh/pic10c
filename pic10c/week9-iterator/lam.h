@@ -16,9 +16,30 @@ class MyClass {
         return data;
     }
 };
+//bool largerThanSomething(int input) { return input > something; }
+//struct largerThanFunctor {
+//    int something;
+//    largerThanFunctor(int something) : something(something) {}
+//    bool operator()(int input) { return input > something; }
+//};
+//struct largerThanRefFunctor {
+//    int& something;
+//    largerThanFunctor(int& something) : something(something) {}
+//    bool operator()(int input) { return input > something; }
+//};
 
 namespace std {
     void testLam() {
+//
+//        int something = 4;
+//        largerThanFunctor(4);
+//        auto largerThanLam = [something](int input) { return input > something; };
+//        auto largerThanRefLam = [&something](int input) { return input > something; };
+//
+//
+//        largerThanLam(5);
+//        largerThanRefLam(5);
+//
         auto addLam = [](int a, int b) { return a+b; };
         
         cout << addLam(10, 12);
